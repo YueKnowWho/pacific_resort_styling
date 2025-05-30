@@ -1,0 +1,101 @@
+/*
+File: index.html
+GUI Assignment: Pacfic Trails Resort Styling
+Jonathan Yue, UMass Lowell Computer Science, jonathan_yue@student.uml.edu
+Copyright (c) 2025 by Jonathan Yue All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+updated by JY on July 30, 2025 at 8 PM
+*/
+*{
+	box-sizing: border-box;
+}
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+div#content, footer{
+	background-color: white;
+}
+
+header {
+	background-image: url(./sunset.jpg);
+	background-size: 100% 100%;
+}
+body {
+	background: url(./ptrbackground.jpg)repeat-x, #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+div#wrapper{
+	min-width: 600px;
+	width:80%;
+	min-width: 664px;
+	margin: 0 auto;
+	background-color:rgb(132, 209, 219);
+}
+nav {
+	background-color: rgb(132, 209, 219);
+	float:left;
+	width:200px;
+}
+div#content, footer{
+	float:right;
+	width: calc(100% - 200px);
+	padding: 0 32px 32px
+}
+nav ul {
+	font-size: 1.3em;
+	list-style: none;
+	padding-left: 24px;
+}
+nav ul li a {
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	color: white;
+}
+h2 {
+	color: #3399CC;
+	font-size: 28px;
+	white-space: nowrap;
+}
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+div#content img{
+	float: left;
+	width: 400px;
+	margin-right: 32px;
+}
+div#content li{
+	list-style-image: url(./marker.gif);
+}
+div#content ul{
+	list-style-position: inside;
+	padding-left: 0;
+}
+span.resort{
+	color:#0f6591;
+	font-weight: bold;
+}
+#contact {
+	font-size: 90%;
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: small
+}
+div#wrapper::after{
+	content: "";
+	display: table;
+	clear: both;
+}
